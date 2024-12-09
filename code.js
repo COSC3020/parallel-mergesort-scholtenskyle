@@ -1,6 +1,6 @@
 const async = require('async');
 
-async function parallelMergesort(array) {
+async function parallelMerge(array) {
     let tmp = new Array(array.length);
     await mergeSort(array, 0, array.length - 1, tmp);
 }
