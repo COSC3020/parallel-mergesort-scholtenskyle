@@ -10,7 +10,7 @@ async function mergeSort(array, lower, higher, tmp) {
       return; 
     }
 
-    let middle = Math.floor((lo + hi) / 2); 
+    let middle = Math.floor((lower + higher) / 2); 
 
     await async.parallel([
         async () => await mergeSort(array, lower, middle, tmp),
